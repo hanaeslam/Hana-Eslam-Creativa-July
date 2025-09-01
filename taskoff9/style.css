@@ -1,0 +1,29 @@
+table{
+    /* border: 2px solid rgb(67, 172, 207); */
+    margin: 4%;
+    width: 70%;
+    border-collapse: separate;
+    text-align: center;
+    font-size: larger;
+
+}
+table th ,td{
+    /* border-bottom: 1px solid rgb(67, 172, 207); */
+    border-bottom: 1px solid rgb(67, 172, 207);
+}
+ th{
+    background-color: teal;
+    border: none;
+} 
+/* tr:nth-child(1) td{
+    background-color: teal;
+لو كنت عاملاهم كلهم td
+} */
+
+
+table tr:nth-child(odd){
+    background-color: lightgrey;
+}
+tr td:first-child{
+    border: none;
+}
