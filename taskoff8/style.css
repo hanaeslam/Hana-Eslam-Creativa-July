@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global-style */
+.container{
+    background-image: url(road.png);
+    height: 308px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 127%;
+}
+.w-100{
+    width: 100%;
+    height: 100%;
+}
+.car{
+    width: 25%;
+    
+    animation: car-move 6s infinite linear;
+}
+@keyframes car-move {
+    0%{
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(1528px);
+    }
+    
+}
