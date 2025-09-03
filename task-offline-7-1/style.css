@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* reset */
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+/* global */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.w-30{
+    width: 30%;
+}
+.card{
+    margin-top: 4%;
+    border: none;
+    border-radius: 8px;
+    box-shadow:0px 0px 4px 4px lightgray ;
+    overflow: hidden;
+}
+.just{
+    justify-content: space-between;
+}
+.img-100{
+    width: 100%;
+    display: block;
+    transition-duration: 2s;
+}
+.w-90{
+    width: 90%;
+    padding:  3%;
+}
+.w-45{
+    width: 45%;
+}
+
+/* custome */
+.w-10{
+    width: 10%;
+    background-color: black;
+}
+.card ul{
+    width: 100%;
+    color: white;
+}
+.card li{
+ padding: 25% 0 ;
+ padding-left: 30%;
+}
+.card p{
+    color: rgb(127, 129, 131);
+    padding: 3% 0%;
+}
+.gray-line{
+    height: 2px;
+    background-color: rgb(127, 129, 131); 
+}
+.blue-line{
+    width: 35%;
+    background-color:rgb(53, 53, 192) ;
+    transition-duration: 2s;
+    height: 100%;
+}
+.card:hover .blue-line{
+    width: 100%;
+}
+.card:hover .w-10{
+    background-color: rgb(53, 53, 192);
+}
+.card:hover img {
+    transform: rotate(10deg) scale(1.2);
+}
+.hidden{
+    overflow: hidden;
+}

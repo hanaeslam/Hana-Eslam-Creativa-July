@@ -1,0 +1,30 @@
+*{
+    box-sizing:content-box ;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    width: 30%;
+    float: left;
+    box-shadow: 0px 0px 20px 2px black;
+}
+.bg{
+    background-color: lightgray;
+}
+.clear{
+    clear: both;
+}
+.container{
+    
+    width: 80%;
+    margin: auto;
+}
+.card img{
+    width: 100%;
+}
+#cardmargin{
+    margin: 0px 5%;
+}
+.m-padding{
+padding: 10%;
+}
