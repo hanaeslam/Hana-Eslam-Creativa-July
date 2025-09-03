@@ -1,0 +1,85 @@
+body {
+    background-color: mediumpurple;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cont {
+   display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.div-style {
+    width: 40%;
+    padding: 20px;
+    background-color: darkturquoise;
+    color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.div-styleee {
+    width: 40%;
+    padding: 20px;
+    background-color: lavenderblush;
+    box-sizing: border-box;
+    
+}
+
+h4 {
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    font-size: larger;
+}
+
+.mmm input,
+textarea {
+    width: 100%;
+    background-color: gainsboro;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    background-color: darkturquoise;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+   
+}
+
+button:hover {
+    background-color: #00b3b3;
+}
+b{
+    font-size: xx-large;
+}

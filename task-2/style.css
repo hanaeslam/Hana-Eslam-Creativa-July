@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg-black{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.text-white{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+nav ul{
+    list-style: none;
+    width: 44%;
+}
+.d-inline-block{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    padding: 1% 0%;
+
+}
+
+nav li{
+    padding: 3% 0%;
+    margin-left: 10%;
+    font-size:small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250%;
+   
+}
+.orangeletter{
+    color: orange;
+   
+}
+/*........*/
+
+.bg-img{
+    background-image: url(city-landscape-slider.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+    background-color: black;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 100%;
+}
+.heading-div{
+    margin: 10% 0%;
+    width: 30%;
+   
+}
+.heading-div h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+} 
+.heading-div h3{
+   font-size: 25px;
+   padding: 5% 0%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading-div hr{
+    width: 15%;
+}
+.heading-div p{
+    padding: 7% 0%;
+
+}
+.button-trans{
+    border: solid white 2px;
+    background-color: transparent;
+    padding: 2% 5%;
+    font-size: larger;
+    margin: 2% 0%;
+}
+.form-div{
+    background-color: white;
+    width: 30%;
+    margin-top: 13%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-div h4{
+    font-size: 20px;
+    background-color: #eae4e4;
+    padding: 4% 0%;
+}
+.form-div input{
+    padding: 4% 0%;
+    width: 80%;
+    margin: 2%;
+    border: none;
+    border-bottom: 2px solid  #eae4e4;
+}
+.form-button{
+    background-color: orange;
+    width: 100%;
+    padding: 4% 0%;
+    margin-top: 10%;
+    border: none;
+    font-size: 20px;
+}
+
+/*........*/
+.social-div{
+    box-shadow: 1px 1px 20px;
+}
+
+.social-div p{
+    color: rgb(154, 149, 149);
+    padding: 3% 0%;
+    font-family: "Arial";
+}
+.social-div h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2% 0%;
+}
+.social-div ul{
+    list-style: none;
+}
+.social-div li{
+    margin: 25px 0 0  50px;
+    color: rgb(154, 149, 149);
+    font-size: 40px;
+}
+.social-word-div{
+    width: 30%;
+}
+
+
+
+
+/*........*/
+.float-left{
+    float: left;
+}
+.tabs-div{
+    width: 15%;
+    margin: 10% 0%;
+    text-align: center;
+}
+.tabs-div button{
+    padding: 20% 17% ;
+    margin: 0.5%;
+    background-color:rgba(0, 0, 0, 0.779);
+    border: none;
+    border-radius:2px ;
+}
+#orangetab{
+    background-color: orange;
+}
+.middle{
+    width: 40%;
+    margin: 10% 9%;
+}
+.middle h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 4%;
+
+}
+.middle p{
+    color: rgba(0, 0, 0, 0.463);
+    padding: 2% 0%;
+    font-family: "Arial";
+    font-size: 20px;
+
+}
+.middle button{
+    background-color: orange;
+    font-size: larger;
+    padding: 2% 5%;
+    margin: 10% 0%;
+    border-radius: 3px;
+    border: none;
+}
+.img-reflection{
+    width: 25%;
+    margin: 10% 0% ;
+}
+.img-reflection .img{
+    transform: translateY(-105px) scale(-1);
+    opacity: 30%;
+
+}
+/*........*/
+.img-div{
+    width: 25%;
+    margin: 5% 0%;
+}
+.img-div img{
+    width: 100%;
+}
+.sublist-div{
+    width:60% ;
+    margin: 4% 0%;
+}
+.sublist-div h3{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sublist-div h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding-top: 3%;
+    margin: 1% 0%;
+}
+.sublist-div hr{
+    width: 10%;
+    margin: 2% 0%; 
+    border: 1px solid orange;
+}
+.sublist-div p{
+     color: rgba(0, 0, 0, 0.463);
+    padding: 1% 0%;
+    font-family: "Arial";
+    font-size: larger;
+
+}
+.sublist-div i{
+    margin-top: 4%;
+    border: 2px solid orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 1.5%;
+    color: orange;
+
+}
+.bg-gray{
+    background-color: #f5f2f2;
+    overflow: auto;
+}
+/* ...........*/
+.what-div{
+    text-align: center;
+
+}
+
+.what-div i{
+    margin: 7% 0%;
+    border: 2px solid orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 3.5%;
+    color: orange;
+}
+.what-div p{
+    color: rgb(154, 149, 149);
+    font-family: "Arial";
+    padding: 2% 0%;
+    margin-bottom: 7%;
+}
+.what-divv{
+    width: 28%;
+    margin-left: 4%;
+    margin-bottom: 7%;
+}
+.what-div h2{
+    margin-top: 5%;
+}
+.what-div h3{
+    margin: 2% 0%;
+}
+.what-div hr{
+    width: 5%;
+    border: solid 1px orange;
+    margin: auto;
+    margin-top: 1%;
+}
+/* ........... */
+.pricing-sec{
+    text-align: center;
+}
+.pricing-sec h2{
+    margin-top: 3%;
+}
+.pricing-sec hr{
+    width: 5%;
+    border: solid 1px orange;
+    margin: auto;
+    margin-top: 1%;
+}
+.pricing-sec p{
+    color: rgb(154, 149, 149);
+    font-family: "Arial";
+    padding: 2% 0%;
+    margin-bottom: 4%;
+}
+.card{
+    width: 30%;
+    margin-left: 3%;
+    
+}
+.card h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgba(0, 0, 0, 0.779);
+    border: none;
+    border-bottom: 1px solid #f5f2f2;
+    padding: 5%;
+}
+.card h4{
+    padding-top: 4%;
+    background: rgba(0, 0, 0, 0.779);
+    color: white;
+    border: none;
+    border-bottom: solid orange 5px;
+    font-size: xx-large;
+}
+.card span{
+    font-size: 60px;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.card p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(154, 149, 149);
+    margin-top: 2%;
+    padding :4% 0%;
+    margin-bottom: 0.5%;
+    font-size: small;
+}
+.card h5{
+    background-color: orange;
+    padding: 4%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card div{
+    background-color: white;
+}
+.card div p{
+    border: none;
+    border-bottom: 2px solid rgb(210, 203, 203);
+    margin: 0;
+    font-size: small;
+    padding: 4%;
+}
+.down-div{
+    margin-top: 3.9%;
+}
+
+/* .... */
+.another-bg-img{
+    background-image: url(esb-header-history-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    text-align: center;
+    color: white; 
+}
+.mm{
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100; 
+}
+.mm h2{
+    margin: 2% 0%;
+     font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 200; 
+      font-size: clamp(28px, 5vw, 64px);
+      text-transform: uppercase;
+
+}
+.mm hr{
+     margin: 2% 50%;
+     width: 5%;
+
+     margin: auto;
+     
+}
+.mm p{
+    margin: 3% 0%;
+    color: rgba(255, 255, 255, 0.559);
+}
+.mm button{
+    border: 2px white solid;
+    padding: 1% 2%;
+    background-color: transparent;
+    color: white;
+    margin: 2% 0%;
+}
+/* ... */
+
+.form-sec{
+    text-align: center;
+}
+.ddiv{
+    width: 45%;
+    margin-left: 2%;
+}
+.form-sec h2{
+       margin: 2% 0%;
+     font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 200; 
+      font-size: clamp(15px, 3vw, 45px);
+      text-transform: uppercase;
+
+}
+.form-sec hr{
+     margin: 2% 50%;
+     width: 5%;
+     margin: auto;
+     border: 1px orange solid;
+}
+.form-sec p{
+    color: rgba(81, 79, 79, 0.559);
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 2% 0;
+}
+
+.form-sec input{
+    margin: 5% 0%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(210, 203, 203);
+    font-size: small;
+}
+.form-sec textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(210, 203, 203);
+    font-size: small;
+    min-height: 173px;
+    padding: 30px;
+  box-sizing: border-box;
+
+}
+.form-sec button{
+    margin-top: 2%;
+    margin-bottom: 6%;
+    padding: 1% 2%;
+    color: white;
+    background-color: orange;
+    border-radius: 2px;
+    border: none;
+}
+
+
+
+
+
