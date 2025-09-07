@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- nav-bar -->
+    <section class="position-sticky index top-0" id="navShadow">
+        <nav class="navbar navbar-expand-lg bg-body border-bottom ">
+            <div class="container py-3">
+                <a class="navbar-brand fw-bold w-10" href="index.html"><img class="w-100" src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+                    <div class="d-flex ms-auto align-items-center red">
+                        <i class="fa-solid fa-phone fs-3"></i>
+                        <div class="ms-2">
+                            <p class="mb-0 "> Contact Us 24/7</p>
+                            <h6 class="mt-0">(+92) 3942 7879</h6>
+                        </div>
+                    </div>
+                    <form class="d-flex ms-auto " role="search">
+                        <div class="position-relative d-flex align-items-center">
+                            <div class="form-control h-100 border-0 bg-secondary-subtle rounded-0 rounded-start-2  ">
+                                <a class="nav-link dropdown-toggle border-end border-0 border-secondary mt-2" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <input class="form-control me-2 py-3 border-0 bg-secondary-subtle rounded-0 rounded-end-2"
+                                type="search" placeholder="Search for product" aria-label="Search" />
+                            <button class="btn btn-dark position-absolute end-0 me-2 py-2 mt-2   top-0 "
+                                type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown mt-2">
+                            <a class="red text-decoration-none dropdown-toggle active red" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/english.png" alt=""> English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img src="images/espanol.png" alt="">Espanol</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="images/francais.png" alt="">Francais</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="images/portugues.png"
+                                            alt="">Portugues</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mt-2 px-3">
+                            <a class=" red text-decoration-none dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UCD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">BRL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mt-2 px-3">
+                            <a class="red text-decoration-none"><i class="fa-solid fa-user"></i> Account</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="red text-decoration-none position-relative"><i class="fa-regular fa-heart fs-5 ">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger size">0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </i></a>
+                        </li>
+                        <li class="nav-item mt-2 px-3">
+                            <a class="red text-decoration-none position-relative"><i
+                                    class="fa-solid fa-cart-shopping fs-5">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger size">0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </i></a>
+                        </li>
+                        <li class="nav-item mt-2 ps-1">
+                            <a class="red text-decoration-none"><i class="fa-solid fa-bars fs-5"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- ul -->
+    <section class="border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 border-end">
+                    <div class=" pt-2">
+                        <button class="red bg-body border-0 h6" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars"></i> Shop by Categories
+                        </button>
+                        <div class="offcanvas offcanvas-start w-25" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-body p-0">
+                                <div class="d-flex align-items-center text-light bg-dark px-4 py-3">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <h6 class="m-0 ms-3">SHOP BY CATEGORIES</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-1.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Fashion</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-2.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Phone & Tablet</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-3.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Labtop & Computer</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-4.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">TV-Audio-Video</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-5.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Camera & Photo</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-6.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Home & Decore</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-7.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Health & Beauty</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-8.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Game Accessories</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-9.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Autopart</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 ms-4">
+                    <div class="pt-2 ">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Homepages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 px-3">
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action Lorem, ipsum.</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+
+                                    </ul>
+                                    <div class="overlay"></div>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4"><a href="shop.html" class="text-decoration-none red h6">Shop</a></li>
+                            <li class="me-4"><a href="contact.html" class="text-decoration-none red h6">Contact Us</a></li>
+                            <li><a href="" class="text-decoration-none red h6"><i class="fa-solid fa-percent"></i>Best
+                                    Discount</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 ms-auto text-end">
+                    <div class="pt-2 "><a href="" class="text-decoration-none red">Recently viewed <i
+                                class="fa-solid fa-chevron-down"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec -->
+    <section class="mb-5">
+        <div class="container">
+            <div class="d-flex">
+                <a href="" class="h6 text-decoration-none text-dark mt-2">Home ></a>
+                <p class="text-secondary ms-2 small mt-2">Shop</p>
+            </div>
+            <h3 class="fw-bold">Shop</h3>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Autopart</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Beauty & Health</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Electronic</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Fashion</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Game Accessories</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Home & Decor</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Laptop & Computer</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">Phone & Tablet</button>
+                <button class="border-0 rounded bg-secondary-subtle py-2 px-3 add">TV-Audio-Video</button>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3 gx">
+                    <div class="pe-5">
+                        <h5>Select filters</h5>
+                        <button class="bg-dark text-light border-0 rounded py-1 px-3 mt-2 mb-4">Max $100 <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <h5 class="mb-3">Colors</h5>
+                        <div class="mb-5">
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-dark rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Black</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-danger rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Red</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-danger-subtle rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Pink</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-success rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Green</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-secondary rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Gray</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-primary rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Blue</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-primary-subtle rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Baby Blue</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-75 align-items-center">
+                                    <span class="bg-success-subtle rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Light green</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-warning rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">Yellow</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-info rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-info-subtle rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-warning-subtle rounded-1 colors me-3"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-success-subtle rounded-1 colors me-3 "></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-secondary-subtle rounded-1 colors me-3 border"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                            <div class="red d-flex justify-content-between mb-3">
+                                <div class="d-flex w-50 align-items-center">
+                                    <span class="bg-body rounded-1 colors me-3 border"></span>
+                                    <h6 class="w-50 align-items-center m-0 small">White</h6>
+                                </div>
+                                <p class="text-secondary m-0 small">95</p>
+                            </div>
+                        </div>
+                        <h5>Brands</h5>
+                        <div class="position-relative mt-3">
+                            <input type="text" class="border border-dark rounded w-100 py-2 px-4"
+                                placeholder="Search brands ...">
+                            <i class="fa-solid fa-magnifying-glass position-absolute end-0 align-self-center me-3"></i>
+                        </div>
+                        <div class="mt-4 overflow-y-auto scroll mb-5">
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex ms-3 align-items-center">
+                                    <h6 class="m-0">Amazon</h6>
+                                    <p class="text-secondary m-0 ms-3">(13)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Price</h5>
+                        <div class="mt-3">
+                            <div class="text-danger d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0 ms-3">0 - $1000</p>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0 ms-3">0 - $1000</p>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0 ms-3">0 - $1000</p>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <p class="m-0 ms-3">0 - $1000</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 d-flex align-items-center mb-5 w-75">
+                            <button
+                                class="rounded border border-dark bg-body py-2 px-4 text-secondary me-1">Min</button>
+                            -
+                            <button
+                                class="rounded border border-dark bg-body py-2 px-4 text-secondary ms-1">Max</button>
+                            <button class="bg-red rounded border-0 text-light py-2 px-3 ms-2">FILTER</button>
+                        </div>
+                        <h5>Size</h5>
+                        <div class="mt-3 mb-5">
+                            <div class="checked red d-flex mb-2 w-100">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Storage Capacity</h5>
+                        <div class="mt-3 mb-5">
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                            <div class="checked red d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between ms-3 w-75">
+                                    <p class="m-0">Us 12</p>
+                                    <p class="m-0 text-secondary">(1)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Customer Rating</h5>
+                        <div class="mt-3">
+                            <div class="checked d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <ul class="d-flex list-unstyled small m-0 ms-2">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <p class=" ms-3 my-0"> (11)</p>
+                            </div>
+                            <div class="checked d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <ul class="d-flex list-unstyled small m-0 ms-2">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p class=" ms-3 my-0"> (11)</p>
+                            </div>
+                            <div class="checked d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <ul class="d-flex list-unstyled small m-0 ms-2">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p class=" ms-3 my-0"> (11)</p>
+                            </div>
+                            <div class="checked d-flex mb-2">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <ul class="d-flex list-unstyled small m-0 ms-2">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p class=" ms-3 my-0"> (11)</p>
+                            </div>
+                            <div class="checked d-flex m-0">
+                                <div
+                                    class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                    <div
+                                        class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                        <i class="fa-solid fa-check small"></i>
+                                    </div>
+                                </div>
+                                <ul class="d-flex list-unstyled small mb-0 ms-2">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p class=" ms-3 my-0"> (11)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 gx-0">
+                    <div class="row justify-content-between">
+                        <div class="col-3">
+                            <p class="text-secondary">Showing 1–84 of 88 results</p>
+                        </div>
+                        <div class="col-8">
+                            <div class="row ">
+                                <div class="col-5 gx-0">
+                                    <div class="checked d-flex mb-2 ms-5">
+                                        <div
+                                            class="box rounded border border-dark position-relative overflow-hidden p-0 m-0 align-self-center">
+                                            <div
+                                                class="position-absolute bg-dark text-light w-100 h-100 d-flex align-items-center m-0">
+                                                <i class="fa-solid fa-check small"></i>
+                                            </div>
+                                        </div>
+                                        <p class="m-0 ms-2">Show only products on sale</p>
+                                        <span class="text-secondary ms-2">|</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto gx-0 ms-auto">
+                                    <div class="d-flex">
+                                        <p class="text-secondary mb-0">Show :</p>
+                                        <a href="" class="text-dark ms-1 ">28</a>
+                                        <a href="" class="text-dark text-decoration-none ms-1">28</a>
+                                        <a href="" class="text-dark text-decoration-none ms-1">28</a>
+                                        <span class="text-secondary ms-4">|</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto ms-auto gx-0">
+                                    <div class="d-flex align-items-center">
+                                        <p class="text-secondary m-0">Sort :</p>
+                                        <p class="small fw-bold m-0 ms-1">Sort by latest</p>
+                                    </div>
+                                </div>
+                                <div class="col-auto d-flex m-0 ms-auto mt-1">
+                                    <i class="fa-solid fa-grip"></i>
+                                    <i class="fa-solid fa-list ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap rounded overflow-hidden border">
+                          <a href="product.html" class="al">
+                            <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/electronic-14-2-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                            </div>
+                          </a>
+                        <a href="product.html" class="al">
+                            <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-1-1-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="product.html" class="al">
+                            <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetics-34-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="product.html" class="al">
+                            <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-2-300x300 (1).jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        </a>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-5-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-6-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-1-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-6-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-7-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-8-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-10-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-12-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-13-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-17-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-19-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-20-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-23-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-28-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-29-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-30-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-31-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-32-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-33-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-34-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-35-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetic-19-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetics-33-300x300 (1).jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-0 position-relative shad block w-25 pb-3">
+                            <img src="images/cosmetics-40-1-300x300 (1).jpg" class="card-img-top wid-hei" alt="...">
+                            <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                                <div class="d-flex flex-column">
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-left-right"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                    <button type="button"
+                                        class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                        data-bs-toggle="tooltip" data-bs-placement="left"
+                                        data-bs-title="Tooltip on top">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                            <div class="card-body pb-0">
+                                <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB
+                                    SSD</p>
+                                <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                            </div>
+                        </div>
+                      
+
+                    </div>
+                    <div class="d-flex mt-5 text-center w-25 m-auto">
+                        <div class="py-2 px-3 border ms-2 border-dark rounded">1</div>
+                        <div class="py-2 px-3 border ms-2  rounded">2</div>
+                        <div class="ms-2">....</div>
+                        <div class="py-2 px-3 border ms-2  rounded">5</div>
+                        <div class="py-2 px-3 border ms-2  rounded">Next</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row justify-content-between pt-5 ">
+                <div class="col-3">
+                    <div>
+                        <div class="w-50"><img class="w-100" src="logo (1).png" alt=""></div>
+                        <div class="d-flex  mt-4">
+                            <i class="fa-solid fa-location-dot me-2 text-secondary mt-1 fs-5"></i>
+                            <p class="text-secondary">29 SE 2nd Ave, Miami<br> Florida 33131, United States</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-regular fa-envelope me-2 text-secondary mt-1 fs-5"></i>
+                            <p class="text-secondary">info@example.com</p>
+                        </div>
+                        <h5 class="footer-red">(+92) 3942 7879</h5>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-light ">Let’s keep in touch</h4>
+                    <div class="my-4 position-relative">
+                        <input type="email" placeholder="Enter your email Address"
+                            class="py-2 px-3 w-100 border border-secondary bg-dark rounded-2 text-light position-relative">
+                        <i
+                            class="fa-solid fa-arrow-right position-absolute text-light end-0 align-self-center me-3 red"></i>
+                    </div>
+                    <ul class="d-flex w-75 list-unstyled justify-content-between">
+                        <li><a href=""><i class="footer-red fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-tiktok"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-solid fa-circle-play"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border border-secondary rounded-2 my-5 py-4 justify-content-evenly">
+                <div class="col-4 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">Didn't find what you were looking for?</h6>
+                            <a href="" class="border-0 text-light under-line">Contact US </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-regular fa-face-smile me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">How can we help you today?</h6>
+                            <a href="" class="border-0  text-light under-line">Help Center </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-globe me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">We’d love to hear what you think!</h6>
+                            <a href="" class="border-0  text-light under-line">Give Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-secondary small">Copyright © Merto. All Rights Reserved</p>
+                </div>
+                <div class="w-25">
+                    <ul class="d-flex justify-content-between w-100 list-unstyled">
+                        <li><i class="text-light fs-2 fa-brands fa-cc-paypal"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-apple-pay"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-visa"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-discover"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-jcb"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-amazon-pay"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-amex"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- arrow-btn  -->
+    <section>
+        <a href="" class="text-danger d-none position-fixed bottom-0 end-0 mb-2 me-2 bg-dark text-light rounded px-2 py-2" id="topBtn"><i class="fa-solid fa-arrow-up  fs-6"></i></a>
+    </section>
+    <!-- js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script>
+        // لازم بعد ما الصفحة تتحمل
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

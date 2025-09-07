@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- nav-bar -->
+    <section class="position-sticky index top-0" id="navShadow">
+        <nav class="navbar navbar-expand-lg bg-body border-bottom ">
+            <div class="container py-3">
+                <a class="navbar-brand fw-bold w-10" href="index.html"><img class="w-100" src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+                    <div class="d-flex ms-auto align-items-center red">
+                        <i class="fa-solid fa-phone fs-3"></i>
+                        <div class="ms-2">
+                            <p class="mb-0 "> Contact Us 24/7</p>
+                            <h6 class="mt-0">(+92) 3942 7879</h6>
+                        </div>
+                    </div>
+                    <form class="d-flex ms-auto " role="search">
+                        <div class="position-relative d-flex align-items-center">
+                            <div class="form-control h-100 border-0 bg-secondary-subtle rounded-0 rounded-start-2  ">
+                                <a class="nav-link dropdown-toggle border-end border-0 border-secondary mt-2" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <input class="form-control me-2 py-3 border-0 bg-secondary-subtle rounded-0 rounded-end-2"
+                                type="search" placeholder="Search for product" aria-label="Search" />
+                            <button class="btn btn-dark position-absolute end-0 me-2 py-2 mt-2   top-0 "
+                                type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown mt-2">
+                            <a class="red text-decoration-none dropdown-toggle active red" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/english.png" alt=""> English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img src="images/espanol.png" alt="">Espanol</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="images/francais.png" alt="">Francais</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="images/portugues.png"
+                                            alt="">Portugues</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mt-2 px-3">
+                            <a class=" red text-decoration-none dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UCD
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">BRL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mt-2 px-3">
+                            <a class="red text-decoration-none"><i class="fa-solid fa-user"></i> Account</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="red text-decoration-none position-relative"><i class="fa-regular fa-heart fs-5 ">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger size">0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </i></a>
+                        </li>
+                        <li class="nav-item mt-2 px-3">
+                            <a class="red text-decoration-none position-relative"><i
+                                    class="fa-solid fa-cart-shopping fs-5">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger size">0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </i></a>
+                        </li>
+                        <li class="nav-item mt-2 ps-1">
+                            <a class="red text-decoration-none"><i class="fa-solid fa-bars fs-5"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- ul -->
+    <section class="border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 border-end">
+                    <div class=" pt-2">
+                        <button class="red bg-body border-0 h6" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars"></i> Shop by Categories
+                        </button>
+                        <div class="offcanvas offcanvas-start w-25" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-body p-0">
+                                <div class="d-flex align-items-center text-light bg-dark px-4 py-3">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <h6 class="m-0 ms-3">SHOP BY CATEGORIES</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-1.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Fashion</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-2.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Phone & Tablet</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-3.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Labtop & Computer</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-4.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">TV-Audio-Video</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-5.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Camera & Photo</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-6.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Home & Decore</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-7.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Health & Beauty</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-8.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Game Accessories</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+                                    <div class="d-flex align-self-center">
+                                        <img src="images/icon-menu-9.png" class="icon" alt="">
+                                        <a href="" class="fw-medium ah text-dark ms-3">Autopart</a>
+                                    </div>
+                                    <p class="text-secondary m-0">></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 ms-4">
+                    <div class="pt-2 ">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Homepages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 px-3">
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action Lorem, ipsum.</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+                                        <li><a class="dropdown-item red" href="#">Action</a></li>
+
+                                    </ul>
+                                    <div class="overlay"></div>
+                                </div>
+                            </li>
+                            <li class="me-4">
+                                <div class="dropdown">
+                                    <a class="h6 red text-decoration-none dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="me-4"><a href="shop.html" class="text-decoration-none red h6">Shop</a></li>                            
+                            <li class="me-4"><a href="contact.html" class="text-decoration-none red h6">Contact Us</a></li>
+                            <li><a href="" class="text-decoration-none red h6"><i class="fa-solid fa-percent"></i>Best
+                                    Discount</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 ms-auto text-end">
+                    <div class="pt-2 "><a href="" class="text-decoration-none red">Recently viewed <i
+                                class="fa-solid fa-chevron-down"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec-1  -->
+    <section>
+        <div class="container">
+            <div class="d-flex align-items-center m-0 my-3">
+                <a href="" class="text-decoration-none text-dark h6 m-0 small">Home</a>
+                <span class="mx-3 small">></span>
+                <a href="" class="text-decoration-none text-dark h6 m-0 small">Shop</a>
+                <span class="mx-3 small">></span>
+                <a href="" class="text-decoration-none text-dark h6 m-0 small">Electronic</a>
+                <span class="mx-3 small">></span>
+                <a href="" class="text-decoration-none text-dark h6 m-0 small">Apple</a>
+                <span class="mx-3 small">></span>
+                <p class="text-secondary m-0 small">Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</p>
+            </div>
+        </div>
+    </section>
+    <!-- sec-2  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="d-flex flex-column">
+                        <img src="images/electronic-14-2-300x300.jpg" onclick="product('electronic-14-2-300x300.jpg')" alt="" class="w-100 border rounded mb-3">
+                        <img src="images/electronic-14-300x300.jpg" onclick="product('electronic-14-300x300.jpg')" alt="" class="w-100 border rounded mb-3">
+                        <img src="images/electronic-15-2-300x300.jpg" onclick="product('electronic-15-2-300x300.jpg')" alt="" class="w-100 border rounded mb-3">
+                        <img src="images/electronic-16-300x300.jpg" onclick="product('electronic-16-300x300.jpg')" alt="" class="w-100 border rounded mb-3">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="position-relative">
+                        <img src="images/electronic-14-2.jpg" alt="" class="w-100 border rounded" id="change">
+                        <div class="text-light bg px-3 py-1 rounded position-absolute top-0 mt-3 ms-3">-35%</div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="ms-4">
+                        <p class="text-secondary red mb-1">Apple</p>
+                        <h3 class="fw-bold">Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</h3>
+                        <div class="d-flex align-items-center mt-2">
+                            <ul class="d-flex list-unstyled">
+                                <li><i class="fa-solid fa-star small"></i></li>
+                                <li><i class="fa-solid fa-star small"></i></li>
+                                <li><i class="fa-solid fa-star small"></i></li>
+                                <li><i class="fa-solid fa-star small"></i></li>
+                                <li><i class="fa-solid fa-star-half-stroke small"></i></li>
+                            </ul>
+                            <p class="text-secondary ms-2 small">4.50(2 Reviews)</p>
+                            <div class="d-inline-block overflow-hidden red line-hover ms-2">
+                                <p class="mb-0 text-secondary small">
+                                    write a review
+                                <div class="line bg-secondary"></div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <p class="text-dark mb-1"><i class="fa-solid fa-check small text-success"></i> WatchOS</p>
+                            <p class="text-dark mb-1"><i class="fa-solid fa-check small text-success"></i> Memory 32 GB
+                            </p>
+                            <p class="text-dark"><i class="fa-solid fa-check small text-success"></i> Battery Lithium
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-0">
+                            <div class="d-flex align-items-center">
+                                <h3 class="m-0">$890</h3>
+                                <del class="text-secondary ms-2 fs-5">$950</del>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="timer text-light bg-danger time rounded" id="hours">00</div> :
+                                <div class="timer text-light bg-danger time rounded" id="minutes">00</div> :
+                                <div class="timer text-light bg-danger time rounded" id="seconds">00</div>
+                            </div>
+                        </div>
+                        <h6 class="text-success bg-success-subtle px-3 d-inline-block rounded py-1 mt-3 mb-4">In stock
+                        </h6>
+                        <h6>Colors :</h6>
+                        <div class="d-flex my-3">
+                            <img src="images/electronic-14-300x300.jpg" alt="" class=" rounded border wid" onclick="product('electronic-14-300x300.jpg')">
+                            <img src="images/electronic-15-2-300x300.jpg" alt="" class=" rounded border wid ms-2" onclick="product('electronic-15-2-300x300.jpg')">
+                            <img src="images/electronic-16-300x300.jpg" alt="" class=" rounded border wid ms-2" onclick="product('electronic-16-300x300.jpg')">
+                            <img src="images/electronic-14-2-300x300.jpg" alt="" class=" rounded border wid ms-2" onclick="product('electronic-14-2-300x300.jpg')">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="overflow-hidden rounded d-inline-block bg-secondary-subtle padding">
+                                <button class="border-0 bg-secondary-subtle p-0" type="button" id="btn-minus">−</button>
+                                <input type="number" id="quantity"
+                                    class=" text-center border-0 bg-secondary-subtle px-0" value="1" min="1" max="99">
+                                <button class="border-0 bg-secondary-subtle p-0" type="button" id="btn-plus">+</button>
+                            </div>
+                            <button
+                                class="bg-dark bg-opacity-25 text-light padding px-5 fw-medium rounded border-0 mx-2 add">+
+                                ADD TO CART</button>
+                            <button
+                                class="bg-danger bg-opacity-50 text-light padding px-4 fw-medium rounded border-0 buy">BUY
+                                NOW</button>
+                        </div>
+                        <div class="d-flex mt-3 mb-2">
+                            <p class="text-secondary red small"><i class="fa-regular fa-heart small"></i> Add to
+                                wishlist</p>
+                            <p class="text-secondary red small ms-4"><i class="fa-solid fa-left-right small"></i> Add to
+                                compare</p>
+                        </div>
+                        <h6>Special offer</h6>
+                        <div class="px-4 py-3 border border-dark rounded">
+                            <p class="mb-2 small fw-medium"><i class="fa-solid fa-credit-card me-3"></i>10% off, maximum
+                                $20 when paying with PAYPAL</p>
+                            <p class="m-0 small fw-medium"><i class="fa-regular fa-credit-card me-3"></i>10% off,
+                                maximum $20 when paying with PAYPAL</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <p class="text-secondary small m-0">SKU :</p>
+                            <p class="ms-2 small m-0">WHY91OSQCW</p>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <p class="text-secondary small">Categories :</p>
+                            <p class="ms-2 small"><span class="red">Apple</span>, <span class="red">Smartwatch</span>
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex w-25 justify-content-between">
+                            <li><a href="" class="text-decoration-none text-dark"><i
+                                        class="fa-brands fa-facebook-f small"></i></a></li>
+                            <li><a href="" class="text-decoration-none text-dark"><i
+                                        class="fa-brands fa-facebook-f small"></i></a></li>
+                            <li><a href="" class="text-decoration-none text-dark"><i
+                                        class="fa-brands fa-facebook-f small"></i></a></li>
+                            <li><a href="" class="text-decoration-none text-dark"><i
+                                        class="fa-brands fa-facebook-f small"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec-3  -->
+    <section class="my-5">
+        <div class="container">
+            <div class="bg-success-subtle rounded overflow-hidden">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mt-4 ms-5 d-flex">
+                            <h3 class="fw-bold">Earn Cash Back For The Things <br> You Buy Every Where</h3>
+                            <button
+                                class="bg-success rounded border-0 py-2 px-3 text-light fw-bold align-self-center ms-5 mt-4">View
+                                more</button>
+                        </div>
+                        <p class="text-dark mt-2 ms-5 small fw-medium">Application via Merto. <a
+                                href="Terms & Conditions." class="text-dark">Terms & Conditions.</a></p>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <img src="images/payments-2-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec-4-tabs  -->
+    <section>
+        <div class="container">
+            <ul class="nav nav-tabs pb-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation ">
+                    <button class="nav-link text-dark active border-0 fs-2 fw-medium p-0 " id="home-tab"
+                        data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                        aria-controls="home-tab-pane" aria-selected="true"><span
+                            class=" border-end py-0 pe-4">Description </span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-dark border-0 fs-2 fw-medium p-0" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false"><span class=" border-end py-0 px-4">Specifications</span></button>
+                </li>
+                <li class="nav-item ms-0" role="presentation">
+                    <button class="nav-link text-dark border-0 fs-2 fw-medium p-0" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                        aria-selected="false"><span class=" py-0 px-4">Reviews (2)</span></button>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" id="myTabContent">
+                <div class="tab-pane fade show active mt-5" id="home-tab-pane" role="tabpanel"
+                    aria-labelledby="home-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-6 align-self-center">
+                            <div class="d-flex">
+                                <h3>
+                                    <p class="fw-bold display-1 m-0">iPad Pro</p>
+                                    Supercharged by
+                                </h3>
+                                <img src="images/apple-m2.png" class="px-2 py-0 ms-4 rounded border border-dark" alt="">
+                            </div>
+                            <p class="fw-medium mt-4">Astonishing performance. Incredibly advanced displays. Superfast
+                                wireless <br> connectivity.
+                                Next-level Apple Pencil capabilities. Powerful new features in iPadOS. The ultimate iPad
+                                experience
+                            </p>
+                            <button class="text-light bg-red fw-medium border-0 padding px-4 rounded mt-3">WATCH THE
+                                FILM <i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                        <div class="col-5 ms-5">
+                            <img src="images/product-detail-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade my-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <table class=" rounded overflow-hidden table table-striped">
+                        <tr>
+                            <td class="fw-medium ps-3">Display</td>
+                            <td>11-inch Liquid Retina display with ProMotion technology and True Tone</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Capacity</td>
+                            <td>128GB, 256GB, 512GB, 1TB or 2TB</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Ciph</td>
+                            <td>Apple M2 chip, 8-core CPU with 4 performance cores and 4 efficiency, cores, 10-core GPU,
+                                16-core, Neural Engine, 100GB/s memory bandwidth, 8GB RAM on models with 128GB, 256GB,
+                                or 512GB storage, 16GB RAM on models with 1TB or 2TB storage</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Camera and Video</td>
+                            <td>12MP Wide and 10MP Ultra Wide cameras with Smart HDR 4 and 4K video at 24 fps, 25 fps,
+                                30 fps, or 60 fps</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Front camera</td>
+                            <td>TrueDepth camera with 12MP Ultra Wide front camera, Center Stage, Portrait mode,
+                                Portrait Lighting, and Smart HDR 4</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Battery Life</td>
+                            <td>Up to 10 hours of surfing the web on Wi‑Fi or watching video, Up to 9 hours of surfing
+                                the web using cellular data network, Charging via USB-C to computer system or power
+                                adapter</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-medium ps-3">Connector</td>
+                            <td>USB-C connector with support for Thunderbolt / USB 4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="d-flex w-100">
+                        <div>
+                            <h2 class="display-5 fw-bold">4.50</h2>
+                            <ul class="d-flex list-unstyled small mt-2 mb-2">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star-half-stroke ms-1"></i></li>
+                            </ul>
+                            <p class="text-secondary">Based on 2 reviews</p>
+                        </div>
+                        <div class="w-50 ms-5">
+                            <div class="d-flex align-items-center ms-3">
+                                <p class="m-0">5<i class="fa-solid fa-star ms-1"></i></p>
+                                <div class="progress w-50 ms-2" role="progressbar" aria-label="Info example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                    <div class="progress-bar bg-dark w-50"></div>
+                                </div>
+                                <p class="m-0 ms-2">1</p>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <p class="m-0">4<i class="fa-solid fa-star ms-1"></i></p>
+                                <div class="progress w-50 ms-2" role="progressbar" aria-label="Info example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                    <div class="progress-bar bg-dark w-50"></div>
+                                </div>
+                                <p class="m-0 ms-2">1</p>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <p class="m-0">3<i class="fa-solid fa-star ms-1"></i></p>
+                                <div class="progress w-50 ms-2" role="progressbar" aria-label="Info example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                    <div class="progress-bar bg-dark w-0"></div>
+                                </div>
+                                <p class="m-0 ms-2">0</p>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <p class="m-0">2<i class="fa-solid fa-star ms-1"></i></p>
+                                <div class="progress w-50 ms-2" role="progressbar" aria-label="Info example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                    <div class="progress-bar bg-dark w-0"></div>
+                                </div>
+                                <p class="m-0 ms-2">0</p>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <p class="m-0">1<i class="fa-solid fa-star ms-1"></i></p>
+                                <div class="progress w-50 ms-2" role="progressbar" aria-label="Info example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+                                    <div class="progress-bar bg-dark w-0"></div>
+                                </div>
+                                <p class="m-0 ms-2">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        <img src="images/c1cdf649f1bd86553a1d14a5b5e9a5ce0233782907d4bf8fae34dd30296ea67c.png"
+                            class="rounded" style="width: 65px; height: 65px;" alt="">
+                        <div class="ms-4">
+                            <ul class="d-flex list-unstyled small m-0">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star-half-stroke ms-1"></i></li>
+                            </ul>
+                            <p class="m-0">Robert Burns</p>
+                            <p class="text-secondary m-0">July 17, 2024</p>
+                        </div>
+                        <div class="ms-5">
+                            <h6 class="ms-5 mb-1">Nice</h6>
+                            <p class="ms-5 mb-0">This watch is nice. The charging is easy and cool. The battery life
+                                always lasts me till night.</p>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="d-flex align-items-center mb-5">
+                        <img src="images/24b37f682728980bc0c2aa0bb2104fabebd31c0390788f96b799bd41fb113983.png"
+                            class="rounded" style="width: 65px; height: 65px;" alt="">
+                        <div class="ms-4">
+                            <ul class="d-flex list-unstyled small m-0">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star ms-1"></i></li>
+                                <li><i class="fa-solid fa-star-half-stroke ms-1"></i></li>
+                            </ul>
+                            <p class="m-0">Robert Burns</p>
+                            <p class="text-secondary m-0">July 17, 2024</p>
+                        </div>
+                        <div class="ms-5">
+                            <h6 class="ms-5 mb-1">Nice</h6>
+                            <p class="ms-5 mb-0">This watch is nice. The charging is easy and cool. The battery life
+                                always lasts me till night.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec-5  -->
+    <section class="mb-5">
+        <div class="container">
+            <h3 class="fw-bold mb-4">Related products</h3>
+            <div class="owl-carousel slider-5 rounded border overflow-hidden">
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-39-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-38-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-26-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-50-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-43-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-9-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-16-1-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card position-relative shad block pb-3">
+                        <img src="images/electronic-21-300x300.jpg" class="card-img-top wid-hei" alt="...">
+                        <div class="px-3 my-3 position-absolute end-0 top-0 arrival">
+                            <div class="d-flex flex-column">
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-left-right"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button"
+                                    class="bg-secondary-subtle border-0 rounded small ms-1 mb-1 py-2 px-2"
+                                    data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class=" border-0 position-absolute top-0 mt-3 ms-3 text-decoration-none py-1 px-2 rounded text-light fw-bold">-35%</a>
+                        <div class="card-body pb-0">
+                            <p class="card-text py-0 my-0 mb-1 red">Laptop Asus Vivobook I5 1355U, 8GB RAM, 512GB SSD
+                            </p>
+                            <h5 class="card-title my-0">$999 <del class="text-secondary h6">$1,536</del></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row justify-content-between pt-5 ">
+                <div class="col-3">
+                    <div>
+                        <div class="w-50"><img class="w-100" src="images/logo (1).png" alt=""></div>
+                        <div class="d-flex  mt-4">
+                            <i class="fa-solid fa-location-dot me-2 text-secondary mt-1 fs-5"></i>
+                            <p class="text-secondary">29 SE 2nd Ave, Miami<br> Florida 33131, United States</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-regular fa-envelope me-2 text-secondary mt-1 fs-5"></i>
+                            <p class="text-secondary">info@example.com</p>
+                        </div>
+                        <h5 class="footer-red">(+92) 3942 7879</h5>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="mb-4 text-light">SHOPPING</h6>
+                        <p class="small footer-red">Wishlist</p>
+                        <p class="small footer-red">Shop by Brand </p>
+                        <p class="small footer-red">Offers</p>
+                        <p class="small footer-red">Track order</p>
+                        <p class="small footer-red">Size Guide</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-light ">Let’s keep in touch</h4>
+                    <div class="my-4 position-relative">
+                        <input type="email" placeholder="Enter your email Address"
+                            class="py-2 px-3 w-100 border border-secondary bg-dark rounded-2 text-light position-relative">
+                        <i
+                            class="fa-solid fa-arrow-right position-absolute text-light end-0 align-self-center me-3 red"></i>
+                    </div>
+                    <ul class="d-flex w-75 list-unstyled justify-content-between">
+                        <li><a href=""><i class="footer-red fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-tiktok"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-solid fa-circle-play"></i></a></li>
+                        <li><a href=""><i class="footer-red fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border border-secondary rounded-2 my-5 py-4 justify-content-evenly">
+                <div class="col-4 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">Didn't find what you were looking for?</h6>
+                            <a href="" class="border-0 text-light under-line">Contact US </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-regular fa-face-smile me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">How can we help you today?</h6>
+                            <a href="" class="border-0  text-light under-line">Help Center </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-light px-0">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-globe me-3 mt-1 fs-4"></i>
+                        <div>
+                            <h6 class="fw-bold">We’d love to hear what you think!</h6>
+                            <a href="" class="border-0  text-light under-line">Give Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-secondary small">Copyright © Merto. All Rights Reserved</p>
+                </div>
+                <div class="w-25">
+                    <ul class="d-flex justify-content-between w-100 list-unstyled">
+                        <li><i class="text-light fs-2 fa-brands fa-cc-paypal"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-apple-pay"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-visa"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-discover"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-jcb"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-amazon-pay"></i></li>
+                        <li><i class="text-light fs-2 fa-brands fa-cc-amex"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- arrow-btn  -->
+    <section>
+        <a href="" class="text-danger d-none position-fixed bottom-0 end-0 mb-2 me-2 bg-dark text-light rounded px-2 py-2" id="topBtn"><i class="fa-solid fa-arrow-up  fs-6"></i></a>
+    </section>
+    <!-- js  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script>
+        // لازم بعد ما الصفحة تتحمل
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

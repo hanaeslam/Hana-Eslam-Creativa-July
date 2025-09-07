@@ -1,0 +1,334 @@
+.w-10{
+    width: 10%;
+}
+.footer-red{
+    color: white;
+}
+.footer-red:hover{
+    color: red;
+}
+.red{
+    color: black;
+}
+.red:hover{
+    color: red !important;
+}
+.red:hover .text-secondary{
+    color: red !important;
+}
+.colors{
+    width: 16px;
+    height: 16px;
+    display:inline-block;
+}
+.size{
+     font-size: 10px !important; 
+}
+.ht{
+    height: 543px;
+}
+.wid-hei{
+    margin: auto;
+    width: 219px;
+    height: 219px;
+}
+.icon-hover i{
+    color: rgb(161, 158, 158);
+}
+.icon-hover:hover i{
+    color: black;
+}
+.circles{
+    width: 140px;
+    height: 140px;;
+}
+.overlay{
+    display: none;
+}
+.overlay i{
+    margin-top: 50%;
+}
+.circles:hover .overlay{
+    display: block;
+}
+.zoom img{
+    transition-duration: 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+.orange{
+    color: rgb(205, 135, 7);
+}
+.dark-button{
+    color: black;
+    background-color: transparent;
+}
+.dark-button:hover{
+    background-color: black !important;
+    color: white !important;
+}
+/* contact */
+.bg-red {
+    background-color: black;
+}
+.bg-red:hover{
+    background-color: red !important;
+}
+.filter:hover img{
+    filter:contrast(0.7);
+}
+.arrival{
+    display: none;
+    position: absolute;
+    top: 91%;
+    z-index: 9999;
+}
+.block:hover .border{
+    border-radius: 3px !important;
+}
+.block:hover .arrival{
+    display: inline-block;
+    border-radius: 3px;
+}
+.line{
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+.line-hover:hover .line{
+    background-color: red !important;
+    transition-duration: 2s;
+    animation: line-hover 0.4s 1 linear;
+}
+
+@keyframes line-hover {
+    0%{
+    transform: translateX(0px);
+
+    }
+    25%{
+        transform: translateX(25px);
+    }
+    50%{
+        transform: translate(50px);
+    }
+    75%{
+        transform: translate(75px);
+    }
+    100%{
+        transform: translateX(105.96px);
+    }
+}
+.bg{
+    background-color: rgb(228, 16, 16);
+}
+.rotate img{
+    transition-duration: 1s;
+}
+.rotate:hover img{
+    transform: rotate(3deg) scale(1.1 , 1.1);
+}
+.shad{
+    border-radius: 0 !important;
+    box-shadow: 0px 0px 0px 0px;
+}
+.shad a{
+    font-size: 12px;
+    background-color: rgb(228, 16, 16);
+}
+.shad:hover{
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 4px 6px rgb(238, 239, 240) !important;
+    z-index: 2 !important;
+} 
+.box{
+    width: 18px;
+    height: 18px;
+    
+}
+.checked .box div{
+    visibility: hidden;
+}
+.checked:hover .box div{
+    visibility: visible;
+}
+.scroll{
+    height: 250px;
+}
+.scroll::-webkit-scrollbar{
+    width: 6px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: rgb(233, 233, 233);
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 6px;
+}
+.owl-carousel:hover .owl-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: none;
+    color: rgb(8, 8, 8);
+}
+.owl-nav i{
+    padding: 20px 15px;
+    background-color: white;
+}
+.owl-prev i{
+        box-shadow: 2px 0px 4px 0px lightgray;
+        border-end-end-radius: 4px;
+        border-top-right-radius: 4px;
+}
+.owl-next i{
+        box-shadow: -2px 0px 4px 0px lightgray;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+}
+.wid{
+    width: 50px;
+    height: 50px;
+}
+.padding{
+    padding: 11px 10px;
+}
+.add:hover{
+    color: black !important;
+    border: 1px solid black !important;
+    background-color: white !important;
+}
+.buy:hover{
+    display: inline-block;
+    color:rgb(218, 67, 67) !important ;
+    border: 1px solid rgb(218, 67, 67) !important;
+    background-color: white !important;
+}
+
+/* hhhhhhhh */
+.owl-dots{
+    display: none;
+}
+.timer{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 18px;
+}
+.f-size{
+    font-size: 170px !important;
+    color: rgba(211, 211, 211, 0.466);
+}
+.sale{
+    background-color: rgb(237, 11, 11);
+    height: 100px;
+    width: 100px;
+    top: 22%;
+    left: 61%;
+}
+.sale {
+      animation: sale 1.5s infinite;
+    }
+@keyframes sale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.09); } 
+    100% { transform: scale(1); }
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    
+}
+.cir{
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50%;
+}
+.trans:hover{
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.under-line{
+    display: inline-block;
+    position: relative;
+    color: #111;
+    text-decoration: none;
+    padding-bottom: 0px;
+  }
+.under-line::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 1px;
+width: 100%;
+background: currentColor;
+}
+.under-line:hover::after {
+animation: disappearFill 1s forwards;
+}
+
+@keyframes disappearFill {
+0% {
+    width: 100%;   
+    left: 0;
+}
+50% {
+    width: 0%;   
+    left: 0;
+}
+100% {
+    width: 100%; 
+    left: 0;
+}
+}
+.ah {
+    display: inline-block;
+    position: relative;
+    color: #111;
+    text-decoration: none;
+  }
+.ah::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 1px;
+width: 0; 
+background: currentColor;
+transition: width 0.4s ease;
+}
+
+.ah:hover::after {
+width: 100%;     
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.index{
+    z-index: 3;
+}
+.al{
+    background-color: white !important;
+}
+.time{
+width: 50px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 18px;
+}
